@@ -8,15 +8,31 @@
 // методи sum і mult мають повертати рядок 'No such propeties'
 
 const calculator = {
-    read(a, b) {
+  a: null,
+  b: null,
 
-    };
+  read(a, b) {
+    this.a = a;
+    this.b = b;
+  },
 
-    sum(){
+  exist() {
+    return this.a !== null && this.b !== null;
+  },
 
+  sum() {
+    if (this.exist()) {
+      return this.a + this.b;
+    } else {
+      return 'No such properties';
     }
+  },
 
-    mult() {
-        
+  mult() {
+    if (this.exist()) {
+      return this.a * this.b;
+    } else {
+      return 'No such properties';
     }
-}
+  },
+};
