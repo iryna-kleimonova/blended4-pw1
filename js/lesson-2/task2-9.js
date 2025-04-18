@@ -6,3 +6,17 @@
 
 // Якщо вказані властивості в обʼєкті відсутні (тобто метод exist повертає false),
 // методи sum і mult мають повертати рядок 'No such propeties'
+
+const calculator = {
+    read(a, b) {
+
+    };
+
+    sum(){
+
+    }
+
+    mult() {
+        
+    }
+}
